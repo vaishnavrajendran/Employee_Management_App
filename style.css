@@ -58,6 +58,15 @@ header > button {
   width: 70%;
 }
 
+.employee__single--title {
+    display: flex;
+    justify-content: center;
+}
+
+.employee__single--para {
+    width: 90%;
+}
+
 .employee__names--title,
 .employee__single--title {
   padding-top: 10px;
@@ -114,7 +123,7 @@ header > button {
   left: 0;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--modal-bg); */
+  background-color: var(--modal-bg);
   border: 0;
 }
 
@@ -154,5 +163,61 @@ header > button {
   cursor: pointer;
 }
 .addEmployee_create--submit:hover {
+  background-color: var(--btn-hover);
+}
+
+.editEmployee {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--modal-bg);
+  border: 0;
+}
+
+.employee__single--edit {
+    cursor: pointer;
+}
+
+.editEmployee_data {
+  width: 400px;
+  background-color: white;
+  box-shadow: 0 0 50px grey;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.editEmployee_data > div {
+  display: grid;
+  grid-template-columns: 48.1% 48.1%;
+  column-gap: 15px;
+}
+.editEmployee_data input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+/* removes arrows from input type='number' */
+.editEmployee_data input::-webkit-outer-spin-button,
+.editEmployee_data input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.editEmployee_data--submit {
+  padding: 10px !important;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--btn);
+  cursor: pointer;
+}
+.editEmployee_data--submit:hover {
   background-color: var(--btn-hover);
 }
