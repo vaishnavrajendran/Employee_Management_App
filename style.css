@@ -59,12 +59,12 @@ header > button {
 }
 
 .employee__single--title {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .employee__single--para {
-    width: 90%;
+  width: 90%;
 }
 
 .employee__names--title,
@@ -180,7 +180,7 @@ header > button {
 }
 
 .employee__single--edit {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .editEmployee_data {
