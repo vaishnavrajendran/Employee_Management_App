@@ -102,6 +102,7 @@
     return formattedDate;
   };
 
+  //To do - TRY INPLACE for memmory management
   editEmployee.addEventListener("click", () => {
     const editEmployeeForm = document.querySelector(".editEmployee_data");
     // Accessing the input fields by their name attribute
